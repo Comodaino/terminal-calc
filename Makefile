@@ -22,6 +22,7 @@ clean:
 install: all 
 	cp $(EXEC_NAME) /usr/local/bin/ 
 	chmod 755 /usr/local/bin/$(EXEC_NAME)
+	rm -rf *.c *.o *.h $(EXEC_NAME)
 
 uninstall: clean
 	rm -f /usr/local/bin/$(EXEC_NAME)

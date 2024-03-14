@@ -81,9 +81,9 @@ line:
   }
   | HELP NEWLINE
   {
-    printf("Welcome to a miosix calculator\n");
+    printf("Welcome to a simple terminal calculator\n");
     printf("To start just type anything you want to calcultae\n");
-    printf("The result will be shown on the LCD display\n\n");
+    printf("The result will be shown here\n\n");
     printf("Avaiable operations are:\n");
     printf("x + y\n");
     printf("x - y\n");
@@ -104,6 +104,7 @@ line:
     printf("ln(x)    -- logarithm base e\n");
     printf("lg(x)    -- logarithm base 2\n");
     printf("x!       -- factorial\n");
+    printf("\n-----\nNever be left high by a calculator");
     printf("\n\n");
   }
   | NEWLINE
